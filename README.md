@@ -39,7 +39,7 @@ Having to stop and create tests before coding
 
 How do I know I made a good test? 
 
-  - When it comes to doing & learning new things no one is great from the start, in a sport or game you can tell you're bad when your friends tell you ( or at least for me ) but when it comes to coding I don't have any friends that code so I'm not sure if I'm creating a good test or not. Jokes aside I do want to look more into how to make a *good* unit test and dive more into the TDD realm. I like the idea of making Unit Tests but what makes a Unit Test a good Unit Test? 
+  - When it comes to doing & learning new things no one is great from the start, in a sport or game you can tell you're bad when your friends tell you that you're bad ( or at least for me ) but when it comes to coding I don't have any friends that code so I'm not sure if I'm creating a good test or not. Jokes aside I do want to look more into how to make a *good* unit test and dive more into the TDD realm. I like the idea of making Unit Tests but what makes a Unit Test a good Unit Test? 
 
 
 ## Project Link
