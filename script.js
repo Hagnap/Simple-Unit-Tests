@@ -43,21 +43,46 @@ function encryptCeasarCipher(message, shift) {
     const LOWER_CASE_BASE = 97;
     const ALPHABET_LENGTH = 26;
     let base = 0;
-    let newLetter = '';
+    let limit = 0;
+    let asciiNumber = 0;
     let newSting = '';
+    /*
     for(let i = 0; i < message.length; i++) {  
         
         newLetter = message[i];
 
         if((/[a-zA-Z]/).test(message.charAt(i))) {
             base = message[i] === message[i].toUpperCase() ? base = UPPER_CASE_BASE : base = LOWER_CASE_BASE;
+
+            console.log(message[i], base + (((message[i].charCodeAt(0) - base) + shift) % ALPHABET_LENGTH))
             newLetter = String.fromCharCode(base + (((message[i].charCodeAt(0) - base) + shift) % ALPHABET_LENGTH));
             
         } 
 
         newSting += newLetter;
     }
-    
+    */
+
+    for(char of message) {
+
+        if((/[a-zA-Z]/).test(char)) {
+
+            base = (char === char.toUpperCase()) ? UPPER_CASE_BASE : LOWER_CASE_BASE;
+            limit = base + ALPHABET_LENGTH;
+
+            asciiNumber = base + (((char.charCodeAt(0) - base) + shift) % ALPHABET_LENGTH);
+
+            if(asciiNumber < base) {
+                asciiNumber = limit - (base - asciiNumber);
+            }
+
+            char = String.fromCharCode(asciiNumber);
+
+        }
+
+        newSting += char;
+    }
+
     return newSting;
 }
 

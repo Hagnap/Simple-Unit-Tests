@@ -37,7 +37,23 @@ test("Use a Ceasar Cipher to encrypt a message",() => {
 });
 
 test("Use a Ceasar Cipher to encrypt a message",() => {
+    expect(units.encryptCeasarCipher("xyz", 5)).toBe("cde");
+});
+
+test("Use a Ceasar Cipher to encrypt a message",() => {
+    expect(units.encryptCeasarCipher("xyz", -5)).toBe("stu");
+});
+
+test("Use a Ceasar Cipher to encrypt a message",() => {
     expect(units.encryptCeasarCipher("This is a test", 10)).toBe("Drsc sc k docd");
+});
+
+test("Use a Ceasar Cipher to encrypt a message",() => {
+    expect(units.encryptCeasarCipher("abc", -5)).toBe("vwx");
+});
+
+test("Use a Ceasar Cipher to encrypt a message",() => {
+    expect(units.encryptCeasarCipher("This is a COMPLEX test! How crazy!", -10)).toBe("Jxyi yi q SECFBUN juij! Xem shqpo!");
 });
 
 test("This analyzes an array", () => {
