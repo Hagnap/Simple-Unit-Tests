@@ -21,3 +21,19 @@ This project features very simple problems to solve but are solved using a Test 
        - Maximum
     
        - Length
+
+
+## Tech Stack
+JavaScript
+
+Jest
+
+Git
+    
+
+## Project Link
+For this one there is no link and that's by design. This can be run via the console/terminal! How exciting! All you have to do is download the repo, open the console/terminal, then navigate the repo's directory (Should be in Downloads directory unless you moved it or have a different location for your downloads... if thats a thing), once in the repo's directory run this command `npm test`. Once that is executed you will the results of the Unit Tests, pretty cool!
+
+
+# Reference/Guide
+This project was created following the Odin Project. You can find the reference [here](https://www.theodinproject.com/lessons/node-path-javascript-testing-practice)
