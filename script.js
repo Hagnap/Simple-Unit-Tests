@@ -71,10 +71,7 @@ function encryptCeasarCipher(message, shift) {
             limit = base + ALPHABET_LENGTH;
 
             asciiNumber = base + (((char.charCodeAt(0) - base) + shift) % ALPHABET_LENGTH);
-
-            if(asciiNumber < base) {
-                asciiNumber = limit - (base - asciiNumber);
-            }
+            asciiNumber = (asciiNumber < base) ? limit - (base - asciiNumber) : asciiNumber;
 
             char = String.fromCharCode(asciiNumber);
 
