@@ -49,6 +49,15 @@ test("Use a Ceasar Cipher to encrypt a message",() => {
 });
 
 test("Use a Ceasar Cipher to encrypt a message",() => {
+    expect(units.encryptCeasarCipher("A test!", 700)).toBe("Y rcqr!");
+});
+
+test("Use a Ceasar Cipher to encrypt a message",() => {
+    expect(units.encryptCeasarCipher("A test!", -700)).toBe("C vguv!");
+});
+
+
+test("Use a Ceasar Cipher to encrypt a message",() => {
     expect(units.encryptCeasarCipher("abc", -5)).toBe("vwx");
 });
 
