@@ -10,7 +10,7 @@ This project features very simple problems to solve but are solved using a Test 
   3)  Create a calculator that performs basic arithmetic operations (add, subtract, multiply, and divide).
         - Input is two operands and one operand
 
-  4) Create a function that encrypts a string via a Ceasar Cipher. 
+  4) Create a function that encrypts a string using a Ceasar Cipher. 
 
   5) Create a function that anaylzes an array of numbers. It should return an object that stores the following data about the array
        - Average
